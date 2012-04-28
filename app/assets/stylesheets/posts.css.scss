@@ -1,43 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial|Astloch:700|Droid+Sans+Mono|Happy+Monkey|Didact+Gothic);
+
 aside {position:relative; display:block;}
 ul {list-style-type:none;}
 .hide {visibility:hidden; height:1px; clip:rect(0 0 0 0); position:absolute;}
 input, textarea {outline:none;}
 
 body {
-  background: #fff;
-  color: #222;
+  background: #000 url(linen.png) repeat;
+  color: rgba(128, 128, 136, 0.9);
+  text-shadow: 0 -2px 2px rgba(10, 10, 20, 0.8);
 }
 
 body, textarea, input {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Questrial', Helvetica, sans-serif;
   line-height: 1.8em;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 h1,h2,h3,h4,h5 {
+  font-family: 'Happy+Monkey', Helvetica, sans-serif;
   font-weight: 900;
-}
-
-p {
-  color: #555;
 }
 
 a,
 a:visited
 a:active {
-  color: #000;
+  color: #6fdf8a;
   text-decoration: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #555;
 }
 
 a:hover {
-  color: red;
+  color: #6fdf8a;
 }
 
 header {
   width: 159px;
-  border-right: 1px solid #DDD;
+  border-right: 1px solid #555;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -45,7 +45,7 @@ header {
 }
 
   header span {
-    color: #888;
+    color: #222;
     font-weight: 500;
   }
 
@@ -66,13 +66,12 @@ header {
 
     header li a {
       padding: 8px 0;
-      color: #888;
-      border-bottom: 2px solid #eee;
+      color: #6fdf8a;
     }
 
       header li a:hover {
-        border-color: #777;
-        color: #444;
+        border-color: #444;
+        color: #6fdf8a;
       }
 
 #container {
@@ -86,7 +85,7 @@ header {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 12px;
-    background: #eee;
+    box-shadow-bottom: 1px 1px rgba(200, 200, 200, 0.5);
   }
 
   #content {
@@ -103,11 +102,14 @@ header {
       }
 
       code {
-      	font-size: 13px;
-      	background: #F2F2F2;
-      	padding: 20px;
-      	margin: 20px;
-      	display: block;
+        text-shadow: none;
+        font-family: 'Droid+Sans+Mono', Helvetica, sans-serif;
+        font-size: 13px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin: 20px;
+        display: block;
       }
 
     h1.aside {
